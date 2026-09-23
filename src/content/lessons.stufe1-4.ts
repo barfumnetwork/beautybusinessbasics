@@ -332,14 +332,16 @@ export const lessonsA: Lesson[] = [
   {
     id: 'L11',
     stage: 3,
-    title: 'Was Prospecting wirklich bedeutet',
-    coreQuestion: 'Was ist Prospecting?',
+    title: 'Ein Gespräch eröffnen',
+    jargon: 'Prospecting',
+    coreQuestion: 'Wie fängt so ein Kontakt überhaupt an?',
     goal: 'Du kannst Kontaktaufnahme und Verkauf voneinander trennen.',
     source: 'Fanatical Prospecting — Jeb Blount',
     sourceNote: 'Buchdatei liegt nicht vor, Konzeptnamen aus öffentlicher Recherche belegt',
     visual: 'prospecting',
     explanation: [
-      'Prospecting heißt: Gespräche eröffnen. Nicht verkaufen. Das sind zwei völlig getrennte Dinge — und fast die gesamte Angst vor dem ersten Schritt entsteht, weil man sie zusammenwirft.',
+      'Es geht um einen einzigen Vorgang: ein Gespräch eröffnen. Nicht verkaufen. Das sind zwei völlig getrennte Dinge — und fast die gesamte Angst vor dem ersten Schritt entsteht, weil man sie zusammenwirft.',
+      'Dafür gibt es ein englisches Fachwort, das du früher oder später hören wirst: Prospecting. Es klingt nach Technik, bedeutet aber nichts anderes als das, was du gerade gelesen hast — mit Menschen ins Gespräch kommen. Wer dir das Wort erklärt, ohne es zu übersetzen, hat es meist selbst nicht verstanden.',
       'Wer glaubt, er müsse bei der ersten Nachricht schon überzeugen, macht sich den Kontakt so schwer, dass er ihn lieber lässt. Dabei geht es zunächst nur um eine einzige Frage: Ist das überhaupt ein Thema für diese Person?',
       'Das nimmt fast allen Druck heraus. Ein Gespräch zu eröffnen ist keine Verpflichtung — für keinen von beiden.',
     ],
@@ -348,7 +350,7 @@ export const lessonsA: Lesson[] = [
       'Formuliere einen Satz, mit dem du ein Gespräch eröffnest, ohne irgendetwas anzubieten. Nur eine Öffnung, kein Angebot.',
     reflection: 'Was wäre das Schlimmste, was nach diesem Satz passieren könnte?',
     quiz: {
-      question: 'Ist Prospecting dasselbe wie Verkaufen?',
+      question: 'Ist ein Gespräch zu eröffnen dasselbe wie Verkaufen?',
       options: [
         'Ja, nur der erste Teil davon',
         'Nein, es ist das Eröffnen eines Gesprächs',

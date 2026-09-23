@@ -23,10 +23,11 @@ export const stages: Stage[] = [
   },
   {
     number: 3,
-    title: 'Prospecting',
+    title: 'Menschen ansprechen',
+    jargon: 'Prospecting',
     description:
-      'Wie Gespräche überhaupt entstehen — und warum in der ersten Woche nichts passiert.',
-    outcome: 'Jetzt verstehe ich, wie man Kontakte findet.',
+      'Wie ein Gespräch überhaupt anfängt — und warum in der ersten Woche nichts passiert.',
+    outcome: 'Jetzt verstehe ich, wie man Menschen anspricht.',
     visual: 'prospecting',
   },
   {
@@ -47,7 +48,8 @@ export const stages: Stage[] = [
   },
   {
     number: 6,
-    title: 'Follow-up',
+    title: 'Dranbleiben',
+    jargon: 'Follow-up',
     description:
       'Was nach dem Gespräch kommt. Der Unterschied zwischen Nachfassen und Nachlaufen — und wann Schluss ist.',
     outcome: 'Jetzt weiß ich, was nach dem Gespräch kommt.',
@@ -56,6 +58,7 @@ export const stages: Stage[] = [
   {
     number: 7,
     title: 'Teamaufbau',
+    jargon: 'Duplikation',
     description:
       'Wie aus einzelnen Menschen ein Team wird, warum Vorbild stärker wirkt als jede Ansage.',
     outcome: 'Jetzt verstehe ich, wie ein Team entsteht.',

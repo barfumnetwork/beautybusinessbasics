@@ -323,7 +323,7 @@ function shapes(name: VisualKey) {
             )
           })}
           {label(160, 106, 'Schritt 4 ist der, der am häufigsten fehlt.', { size: 9, fill: accent })}
-          {label(160, 122, 'Erst dort beginnt Multiplikation.', { size: 8.5 })}
+          {label(160, 122, 'Erst dort vervielfacht es sich von selbst.', { size: 8.5 })}
         </g>
       )
     }

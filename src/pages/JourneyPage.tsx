@@ -15,9 +15,9 @@ export function JourneyPage() {
         Neun Stufen, in einer Reihenfolge, die einen Grund hat
       </h1>
       <p className="prose-measure mt-4 text-[1.0625rem] leading-relaxed text-muted">
-        Kommunikation kommt vor Prospecting, weil eine Kontaktliste nichts nützt, wenn man
-        noch nie ein gutes Gespräch geführt hat. Psychologie kommt nach dem Verkaufen, weil
-        man erst sehen muss, was passiert, bevor man versteht, warum.
+        Reden lernen kommt vor Menschen ansprechen, weil eine Liste mit Namen nichts nützt,
+        wenn man noch nie ein gutes Gespräch geführt hat. Psychologie kommt nach dem
+        Verkaufen, weil man erst sehen muss, was passiert, bevor man versteht, warum.
       </p>
       <p className="prose-measure mt-3 text-[0.9375rem] text-faint">
         Gesperrt ist trotzdem nichts. Du darfst überall anfangen.
@@ -39,6 +39,11 @@ export function JourneyPage() {
                     {String(s.number).padStart(2, '0')}
                   </span>
                   <h2 className="display text-[1.1875rem] leading-snug text-ink">{s.title}</h2>
+                  {s.jargon && (
+                    <span className="hidden shrink-0 text-[0.75rem] text-faint sm:inline">
+                      auch „{s.jargon}"
+                    </span>
+                  )}
                   {complete && (
                     <span className="ml-auto flex shrink-0 items-center gap-1 text-[0.75rem] font-medium text-accent">
                       <Icon name="check" className="h-3.5 w-3.5" />
@@ -102,6 +107,12 @@ export function StagePage() {
       <h1 className="display mt-2 text-[2rem] leading-tight text-ink sm:text-[2.5rem]">
         {stage.title}
       </h1>
+      {stage.jargon && (
+        <p className="mt-2 text-[0.875rem] text-faint">
+          Dafür gibt es ein Fachwort: „{stage.jargon}". Du wirst es hören — es bedeutet
+          genau das, was hier steht.
+        </p>
+      )}
       <p className="prose-measure mt-4 text-[1.0625rem] leading-relaxed text-muted">
         {stage.description}
       </p>

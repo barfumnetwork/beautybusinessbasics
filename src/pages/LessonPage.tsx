@@ -57,6 +57,11 @@ export function LessonPage() {
         <h1 className="display mt-2 text-[2rem] leading-[1.15] text-ink sm:text-[2.5rem]">
           {lesson.title}
         </h1>
+        {lesson.jargon && (
+          <p className="mt-2 text-[0.875rem] text-faint">
+            Fachwort dafür: „{lesson.jargon}"
+          </p>
+        )}
         <p className="mt-4 border-l-2 border-accent pl-4 text-[1.0625rem] leading-relaxed text-muted">
           {lesson.coreQuestion}
         </p>
@@ -125,9 +130,10 @@ export function LessonPage() {
         <section className="mt-10 rounded-2xl border border-accent bg-accent-soft p-6 text-center">
           <p className="display text-[1.375rem] leading-snug text-ink">Das war alles.</p>
           <p className="mx-auto mt-3 max-w-md text-[0.9375rem] leading-relaxed text-muted">
-            Du hast jetzt die Grundlagen kennengelernt. Du weißt, wie Network Marketing,
-            Kommunikation, Prospecting, Verkauf, Psychologie und Führung funktionieren.
-            Was du mit diesem Wissen machst, entscheidest du selbst.
+            Du hast jetzt die Grundlagen kennengelernt. Du weißt, wie Network Marketing
+            funktioniert, wie man mit Menschen redet und sie anspricht, wie Verkaufen ohne
+            Druck geht, warum Menschen Ja oder Nein sagen, was nach einem Gespräch kommt und
+            was Führung bedeutet. Was du mit diesem Wissen machst, entscheidest du selbst.
           </p>
           <p className="mt-4 text-[0.8125rem] text-faint">
             Alle Inhalte bleiben offen. Du kannst jederzeit zurückkommen.

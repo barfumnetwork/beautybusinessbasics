@@ -34,6 +34,8 @@ export type Lesson = {
   id: string
   stage: number
   title: string
+  /** Fachwort, das in dieser Lektion entzaubert wird. */
+  jargon?: string
   coreQuestion: string
   goal?: string
   /** Woher der Gedanke stammt. Wird unter jeder Lektion angezeigt. */
@@ -56,6 +58,8 @@ export type Lesson = {
 export type Stage = {
   number: number
   title: string
+  /** Das englische Fachwort, das draussen dafuer benutzt wird. */
+  jargon?: string
   description: string
   /** Der Satz, den der Lernende danach sagen kann. */
   outcome: string
@@ -66,10 +70,10 @@ export type QuestionCategory =
   | 'Grundverständnis'
   | 'Selbstbild'
   | 'Kommunikation'
-  | 'Prospecting'
+  | 'Menschen ansprechen'
   | 'Verkaufen'
   | 'Psychologie'
-  | 'Follow-up'
+  | 'Dranbleiben'
   | 'Team und Führung'
   | 'Entwicklung'
   | 'Offen'

@@ -211,15 +211,17 @@ export const lessonsB: Lesson[] = [
   {
     id: 'L27',
     stage: 6,
-    title: 'Was Follow-up ist',
-    coreQuestion: 'Was passiert nach dem Gespräch?',
+    title: 'Was nach dem Gespräch kommt',
+    jargon: 'Follow-up',
+    coreQuestion: 'Was passiert, nachdem man geredet hat?',
     goal: 'Du weißt, warum der zweite Kontakt vereinbart wird und nicht abgewartet.',
     source: 'Go Pro — Eric Worre, Schritt 4 von sieben',
     visual: 'followup',
     explanation: [
-      'Follow-up ist der verabredete zweite Kontakt. Es ist der Schritt, den fast alle auslassen — und der Grund, warum so viele Gespräche ins Leere laufen.',
+      'Gemeint ist der verabredete zweite Kontakt. Es ist der Schritt, den fast alle auslassen — und der Grund, warum so viele Gespräche ins Leere laufen.',
       'Der Denkfehler dahinter: Man glaubt, wer interessiert ist, meldet sich schon. Das stimmt nicht. Interessierte Menschen haben Alltag, Kinder, Arbeit und dreißig andere Dinge im Kopf. Sie melden sich nicht, weil sie kein Interesse haben, sondern weil Mittwoch war.',
       'Kaum jemand entscheidet beim ersten Mal. Deshalb gehört der nächste Schritt ins Gespräch — nicht danach in eine Nachricht.',
+      'Das Fachwort dafür lautet Follow-up. Auf Deutsch: nachfassen. Mehr steckt nicht dahinter.',
     ],
     example:
       '„Schau es dir in Ruhe an, ich melde mich Donnerstag" ist Follow-up. „Melde dich, wenn du Interesse hast" ist keins — das ist eine höfliche Art, ein Gespräch zu beenden.',
@@ -395,19 +397,20 @@ export const lessonsB: Lesson[] = [
   {
     id: 'L33',
     stage: 7,
-    title: 'Duplikation einfach erklärt',
+    title: 'Wie Wachstum wirklich entsteht',
+    jargon: 'Duplikation',
     coreQuestion: 'Wie wächst so etwas überhaupt?',
-    goal: 'Du kannst Duplikation ohne Zahlen erklären.',
+    goal: 'Du kannst es ohne eine einzige Zahl erklären.',
     source: 'John C. Maxwell, Gesetz 20 — Wachstum durch Entwicklung',
     visual: 'duplikation',
     explanation: [
       'Maxwell unterscheidet zwei Arten von Wachstum. Wer Mitläufer gewinnt, addiert: aus einem wird zwei, aus zwei wird drei. Wer Menschen entwickelt, die selbst wieder Menschen entwickeln, multipliziert.',
-      'Der praktische Kern sind vier Schritte, und sie sind langweiliger, als man denkt: selbst machen, zeigen, begleiten, weitergeben lassen. Der vierte ist der entscheidende und der, der am häufigsten fehlt.',
+      'Der praktische Kern sind vier Schritte, und sie sind langweiliger, als man denkt: selbst machen, zeigen, begleiten, weitergeben lassen. Der vierte ist der entscheidende und der, der am häufigsten fehlt. Das Fachwort für dieses Weitergeben heißt Duplikation.',
       'Denn weitergeben lassen heißt: loslassen. Und das fällt besonders denen schwer, die es gut meinen.',
     ],
     example:
       'Eine Fahrlehrerin, die immer selbst mitfährt, hat nie einen Fahrer ausgebildet. Erst wenn jemand allein fährt, ist er wirklich Fahrer.',
-    practice: 'Erkläre Duplikation in zwei Sätzen ohne eine einzige Zahl.',
+    practice: 'Erkläre einem Kind in zwei Sätzen, wie das wächst — ohne eine einzige Zahl.',
     reflection: 'Was hältst du gerade fest, das jemand anders übernehmen könnte?',
     practice_example:
       'In der Praxis wird daraus manchmal eine Denkweise mit eigenem Namen. Bei glossily heißt sie „Power of Five": fünf Menschen wirklich begleiten, statt möglichst viele Gespräche zu führen. Keine Rechenformel, sondern eine Entscheidung für Tiefe statt Menge.',
@@ -421,7 +424,7 @@ export const lessonsB: Lesson[] = [
       correct: 1,
       onCorrect: 'Und deshalb ist die Frage nicht, wie viele du erreichst — sondern wie tief du begleitest.',
       onWrong:
-        'Noch einmal kurz darüber nachdenken: Viele Mitmachende bedeuten erst einmal nur mehr Arbeit für dich. Multiplikation entsteht erst, wenn andere den Ablauf selbst weitergeben.',
+        'Noch einmal kurz darüber nachdenken: Viele Mitmachende bedeuten erst einmal nur mehr Arbeit für dich. Vervielfachen kann es sich erst, wenn andere den Ablauf selbst weitergeben.',
     },
     minutes: 4,
   },
@@ -656,7 +659,8 @@ export const lessonsB: Lesson[] = [
         'Die Person macht es genau wie du',
       ],
       correct: 1,
-      onCorrect: 'Und das ist der Moment, in dem Multiplikation aus Lektion 33 tatsächlich beginnt.',
+      onCorrect:
+        'Und das ist der Moment, in dem sich das aus Lektion 33 tatsächlich zu vervielfachen beginnt.',
       onWrong:
         'Noch einmal kurz darüber nachdenken: Häufiges Nachfragen und exaktes Nachmachen sind Zeichen von Abhängigkeit. Selbstständigkeit ist das Ziel.',
     },
@@ -670,7 +674,7 @@ export const lessonsB: Lesson[] = [
     goal: 'Du ordnest für dich ein, was du mitnimmst und was nicht.',
     source: 'Eigene Erklärung der Academy',
     explanation: [
-      'Du weißt jetzt, wie Empfehlungsmarketing funktioniert und woran man ein seriöses Modell erkennt. Du weißt, wie man Gespräche führt, wie Kontakte entstehen und warum Menschen Ja oder Nein sagen. Du kennst die sieben Muster hinter Entscheidungen — und die Grenze, an der sie in Manipulation umschlagen. Du weißt, was Follow-up ist, wie ein Team entsteht und was Führung bedeutet.',
+      'Du weißt jetzt, wie das Empfehlen als Geschäft funktioniert und woran man ein seriöses Modell erkennt. Du weißt, wie man Gespräche führt, wie Kontakte entstehen und warum Menschen Ja oder Nein sagen. Du kennst die sieben Muster hinter Entscheidungen — und die Grenze, an der sie in Manipulation umschlagen. Du weißt, was nach einem Gespräch kommt, wie ein Team entsteht und was Führung bedeutet.',
       'Dieses Wissen gehört dir. Unabhängig davon, ob du jemals in dieser Branche arbeitest. Es funktioniert in einem Angestelltenverhältnis, in einem Verein, in einer Familie.',
       'Es gibt hier keinen nächsten Schritt, den wir dir vorgeben. Es gibt nur deinen.',
     ],
