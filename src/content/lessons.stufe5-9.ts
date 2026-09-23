@@ -156,7 +156,7 @@ export const lessonsB: Lesson[] = [
     practice: 'Wo hast du weitergemacht, obwohl du eigentlich aufhören wolltest?',
     reflection: 'Was hat dich damals festgehalten — die Sache selbst oder dein eigenes Wort?',
     boundary:
-      'Jeder Mensch darf seine Meinung ändern. Wer jemanden an ein altes Ja erinnert, um ein neues Nein zu verhindern, manipuliert — auch wenn der Satz freundlich klingt und das alte Ja tatsächlich gefallen ist.',
+      'Jeder Mensch darf seine Meinung ändern. Wer dich an ein altes Ja erinnert, damit du kein neues Nein sagst, manipuliert dich. Auch dann, wenn es freundlich klingt. Und auch dann, wenn du das alte Ja wirklich gesagt hast.',
     quiz: {
       question: 'Was ist an diesem Muster besonders heikel?',
       options: [
@@ -533,7 +533,7 @@ export const lessonsB: Lesson[] = [
     visual: 'gespraech',
     explanation: [
       'Menschen folgen erst der Person, dann der Sache. Das gilt in Unternehmen, in Vereinen, in Familien — und es gilt unabhängig davon, wie gut die Sache ist.',
-      'Wer um etwas bittet, bevor eine Verbindung da ist, bekommt Höflichkeit statt Gefolgschaft. Und Höflichkeit hält genau so lange, wie es bequem ist.',
+      'Wer um etwas bittet, bevor eine Verbindung da ist, bekommt Höflichkeit — aber niemanden, der wirklich mitgeht. Und Höflichkeit hält genau so lange, wie es bequem ist.',
       'Das ist derselbe Gedanke wie in Lektion 6, nur eine Ebene höher: Was dort ein Gespräch trägt, trägt hier eine Zusammenarbeit über Jahre.',
     ],
     example:
@@ -615,7 +615,7 @@ export const lessonsB: Lesson[] = [
     source: 'Jeb Blount und Maxwell, Gesetz 3',
     visual: 'dreissig-tage',
     explanation: [
-      'Schwankungen gehören dazu. Blount beschreibt den Zyklus aus viel und nichts — und wie er entsteht: Man arbeitet, wenn es schlecht läuft, hört auf, wenn es gut läuft, und wundert sich, dass es wieder schlecht wird.',
+      'Schwankungen gehören dazu. Blount beschreibt, wie sie entstehen. Man arbeitet, wenn es schlecht läuft. Man hört auf, wenn es gut läuft. Und dann wundert man sich, dass es wieder schlecht wird.',
       'Entscheidend ist deshalb nicht, ob gerade etwas zurückkommt. Entscheidend ist, ob du in der schlechten Phase weitergemacht hast — denn die Wirkung dieser Wochen zeigt sich erst danach.',
       'Das Einzige, was du in einer schlechten Phase steuern kannst, ist die eigene Handlung. Nicht das Ergebnis, nicht die Stimmung, nicht die Reaktion anderer.',
     ],

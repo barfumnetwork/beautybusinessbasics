@@ -159,7 +159,7 @@ export const objections: Objection[] = [
     practical:
       'Manche in deinem Umfeld werden es komisch finden. Das ist der Preis, und du darfst entscheiden, ob er dir zu hoch ist. Niemand hier sagt dir, dass du darüber hinwegsehen musst.',
     limit:
-      'Wer dir sagt, dein Umfeld sei einfach nur neidisch, macht es sich zu einfach — und schneidet dich nebenbei von den Menschen ab, die dich kennen.',
+      'Wer dir sagt, dein Umfeld sei einfach nur neidisch, macht es sich zu leicht. Nebenbei schneidet er dich von den Menschen ab, die dich am längsten kennen.',
     tags: ['umfeld', 'peinlich', 'ruf', 'familie', 'was denken andere', 'status'],
   },
   {

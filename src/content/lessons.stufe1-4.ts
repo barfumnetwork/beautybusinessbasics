@@ -56,7 +56,7 @@ export const lessonsA: Lesson[] = [
     practice: 'Formuliere die Prüffrage in deinen eigenen Worten, so wie du sie tatsächlich aussprechen würdest.',
     reflection: 'Was würdest du denken, wenn jemand auf diese Frage ausweichend antwortet?',
     quiz: {
-      question: 'Was ist das wichtigste Erkennungsmerkmal?',
+      question: 'Woran erkennst du es am sichersten?',
       options: [
         'Wie groß das Team ist',
         'Woher der Umsatz kommt',
@@ -147,7 +147,7 @@ export const lessonsA: Lesson[] = [
     sourceNote: 'Die sieben Schritte sind über die Verlagsbeschreibung belegt',
     visual: 'sieben-faehigkeiten',
     explanation: [
-      'Eric Worre beschreibt in „Go Pro" sieben Fähigkeiten: Kontakte finden, einladen, zeigen, nachfassen, zum Kunden oder Partner begleiten, beim Start helfen und über gemeinsame Veranstaltungen wachsen.',
+      'Eric Worre beschreibt in „Go Pro" sieben Fähigkeiten. Kontakte finden. Einladen. Zeigen. Nachfassen. Zum Kunden oder Partner begleiten. Beim Start helfen. Und über gemeinsame Veranstaltungen wachsen.',
       'Keine davon ist angeboren. Es gibt keinen Gen-Test für „kann empfehlen". Es sind sieben Handgriffe, die man einzeln üben kann, wie Einparken oder Kuchenbacken.',
       'Und noch wichtiger: Du brauchst am Anfang nur die erste. Niemand muss alle sieben können, um anzufangen. Die meisten, die aufgeben, tun das nicht, weil sie untalentiert sind, sondern weil sie geglaubt haben, sie müssten von Tag eins alles gleichzeitig beherrschen.',
     ],
@@ -501,7 +501,7 @@ export const lessonsA: Lesson[] = [
     visual: 'verkauf',
     explanation: [
       'Verkaufen im guten Sinn heißt herausfinden, ob etwas zu jemandem passt. Nicht: jemanden dazu bringen, etwas zu nehmen.',
-      'Das ändert alles. Wenn es nicht passt, ist „das ist nichts für dich" die richtige Antwort — und zwar nicht aus Anstand, sondern weil es die fachlich korrekte Auskunft ist.',
+      'Das ändert alles. Wenn es nicht passt, ist „das ist nichts für dich" die richtige Antwort. Nicht aus Anstand. Sondern weil es schlicht die richtige Auskunft ist.',
       'Wer so arbeitet, muss nie überreden. Und er verliert auch niemanden, weil jemand ein Produkt bekommen hat, das ihm nicht geholfen hat.',
     ],
     example:
