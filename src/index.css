@@ -1,0 +1,135 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------
+   Design-Tokens.
+   Helles Thema vollständig auf :root, damit jede Farbe einen Wert hat,
+   auch wenn kein Media-Query greift. Dunkles Thema überschreibt nur
+   die Tokens.
+   ------------------------------------------------------------------ */
+@theme {
+  --color-paper: #faf8f6;
+  --color-surface: #ffffff;
+  --color-raised: #f3efeb;
+  --color-ink: #1c1917;
+  --color-muted: #57534e;
+  --color-faint: #8a827b;
+  --color-line: #e7e2dd;
+  --color-accent: #6b1a35;
+  --color-accent-soft: #f5eaee;
+  --color-accent-ink: #ffffff;
+
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+/* Dunkles Thema: nur die Tokens werden überschrieben, die Utilities bleiben
+   dieselben. @theme darf nicht in einem Media-Query stehen, deshalb hier
+   als gewöhnliche Variablen-Überschreibung. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #17141a;
+    --color-surface: #1f1b22;
+    --color-raised: #272229;
+    --color-ink: #f2ede9;
+    --color-muted: #b6aca5;
+    --color-faint: #8f857e;
+    --color-line: #332c36;
+    --color-accent: #e8a9bd;
+    --color-accent-soft: #2e1f28;
+    --color-accent-ink: #1a1016;
+  }
+}
+
+:root {
+  color-scheme: light dark;
+  /* Die Wortmarke ist als schwarzes PNG geliefert; im dunklen Thema invertiert. */
+  --wordmark-filter: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --wordmark-filter: invert(1);
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* Nichts darf seitlich herausragen. `clip` statt `hidden`, damit
+     position: sticky für Kopf- und Fußleiste weiter funktioniert.
+     `hidden` steht als Rückfall für ältere Telefone davor. */
+  overflow-x: hidden;
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Sichtbarer Fokus für Tastaturbedienung. */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@utility display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+@utility eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-faint);
+}
+
+@utility prose-measure {
+  max-width: 34rem;
+}
+
+/* Sanftes Einblenden beim Seitenwechsel, respektiert reduced-motion. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@utility rise {
+  animation: rise 0.34s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
