@@ -2,13 +2,15 @@ import { useEffect, useState } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { TOTAL_LESSONS } from '../content/lessons'
 import { useProgress } from '../lib/progress'
-import { Icon, type IconName } from './Icon'
+import { BottomNav, type NavItem } from './BottomNav'
+import { Icon } from './Icon'
+import { IntroSequence, hasSeenIntro } from './IntroSequence'
 import { Logo } from './Logo'
 import { SearchOverlay } from './SearchOverlay'
 
-const nav: { to: string; label: string; icon: IconName }[] = [
+const nav: NavItem[] = [
   { to: '/', label: 'Start', icon: 'start' },
-  { to: '/lernreise', label: 'Lernreise', icon: 'journey' },
+  { to: '/lernreise', label: 'Lernreise', icon: 'journey', also: ['/lektion'] },
   { to: '/fragen', label: 'Fragen', icon: 'question' },
   { to: '/bedenken', label: 'Bedenken', icon: 'concern' },
   { to: '/fortschritt', label: 'Fortschritt', icon: 'progress' },
@@ -18,6 +20,11 @@ export function Layout() {
   const { read } = useProgress()
   const { pathname } = useLocation()
   const [searchOpen, setSearchOpen] = useState(false)
+  // Intro laeuft nur beim ersten Besuch der Startseite — danach nie wieder,
+  // ausser der Nutzer ruft es im Fussbereich selbst auf.
+  const [showIntro, setShowIntro] = useState(
+    () => typeof window !== 'undefined' && window.location.pathname === '/' && !hasSeenIntro()
+  )
   const done = read.length
   const percent = Math.round((done / TOTAL_LESSONS) * 100)
 
@@ -62,7 +69,7 @@ export function Layout() {
                 to={item.to}
                 end={item.to === '/'}
                 className={({ isActive }) =>
-                  `rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                  `rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${
                     isActive
                       ? 'bg-accent-soft text-accent'
                       : 'text-muted hover:bg-raised hover:text-ink'
@@ -77,7 +84,7 @@ export function Layout() {
           <button
             type="button"
             onClick={() => setSearchOpen(true)}
-            className="ml-auto flex h-11 min-w-11 items-center gap-2 rounded-lg border border-line px-3 text-sm text-muted transition-colors hover:border-accent hover:text-accent md:ml-2"
+            className="ml-auto flex h-11 min-w-11 items-center gap-2 rounded-full border border-line px-3.5 text-sm text-muted transition-colors hover:border-accent hover:text-accent active:scale-95 md:ml-2"
           >
             <Icon name="search" className="h-[18px] w-[18px]" />
             <span className="hidden lg:inline">Suchen</span>
@@ -119,40 +126,21 @@ export function Layout() {
             Die Inhalte sind eigene Erklärungen auf Grundlage veröffentlichter Fachbücher.
             Jede Lektion nennt ihre Quelle. Keine Einkommensversprechen, keine Beratung.
           </p>
+          <button
+            type="button"
+            onClick={() => setShowIntro(true)}
+            className="mt-4 min-h-11 text-[0.8125rem] font-medium text-accent underline-offset-4 hover:underline"
+          >
+            Intro noch einmal ansehen
+          </button>
         </div>
       </footer>
 
-      {/* Untere Navigation auf dem Telefon. Fünf Ziele, mehr nicht. */}
-      <nav
-        className="sticky bottom-0 z-30 border-t border-line bg-paper/95 backdrop-blur md:hidden"
-        style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
-        aria-label="Hauptnavigation"
-      >
-        <ul className="mx-auto flex max-w-5xl">
-          {nav.map((item) => (
-            <li key={item.to} className="flex-1">
-              <NavLink
-                to={item.to}
-                end={item.to === '/'}
-                className={({ isActive }) =>
-                  `flex h-[3.75rem] flex-col items-center justify-center gap-1 text-[0.625rem] font-medium transition-colors ${
-                    isActive ? 'text-accent' : 'text-faint'
-                  }`
-                }
-              >
-                {({ isActive }) => (
-                  <>
-                    <Icon name={item.icon} className={isActive ? 'h-[22px] w-[22px]' : 'h-5 w-5'} />
-                    {item.label}
-                  </>
-                )}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <BottomNav items={nav} />
 
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
+
+      {showIntro && <IntroSequence onDone={() => setShowIntro(false)} />}
     </div>
   )
 }

@@ -10,7 +10,7 @@ import { useProgress } from '../lib/progress'
 const entries: { to: string; title: string; subtitle: string; icon: IconName }[] = [
   {
     to: '/lektion/l01',
-    title: 'Von vorn anfangen',
+    title: 'Jetzt starten',
     subtitle: 'Ich kenne Network Marketing noch nicht.',
     icon: 'start',
   },
@@ -87,7 +87,7 @@ export function HomePage() {
         <h2 className="display text-2xl text-ink">Was dich hier nicht erwartet</h2>
         <ul className="prose-measure mt-5 space-y-3 text-[0.9375rem] leading-relaxed text-muted">
           {[
-            'Keine Einladung, kein Formular, kein „jetzt starten".',
+            'Keine Einladung, kein Formular, kein Drängen zu einem Einstieg.',
             'Keine Einkommenszahlen und keine Rechenbeispiele.',
             'Keine Erfolgsgeschichten, weil wir keine belegen könnten.',
             'Kein Konto, keine E-Mail-Adresse, kein Tracking.',
